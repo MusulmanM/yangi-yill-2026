@@ -13,6 +13,9 @@ class Maktab(models.Model):
 
 
 
+class Direktor(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    oylik = models.IntegerField(blank=True, null=True)
+    ishga_kelgan = models.DateField()
+    created_at = models.DateTimeField(auto_now_add=True)
 
-
-# Direktor class forinkey user, oylik, ishga-kelgan-vaqt, yaratilgan vaqt
