@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maktablar</title>
+</head>
+<body>
+    <h1>Maktablar</h1>
+    {% if maktablar %}
+        <ul>
+        {% for m in maktablar %}
+            <li>
+                <a href="{% url 'maktab_detail' pk=m.id %}">{{ m.name }}</a>
+                - {{ m.manzil }}
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No maktablar available.</p>
+    {% endif %}
+</body>
+</html>

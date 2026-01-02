@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ maktab.name }}</title>
+</head>
+<body>
+    <h1>{{ maktab.name }}</h1>
+    <p><strong>Manzil:</strong> {{ maktab.manzil }}</p>
+    <p><strong>Soni:</strong> {{ maktab.soni }}</p>
+    <p><strong>Ochilgan sana:</strong> {{ maktab.maktab_ochilgan }}</p>
+    <p><a href="{% url 'maktab' %}">Back to list</a></p>
+</body>
+</html>
